@@ -6,10 +6,11 @@
 
 /* eslint-disable */
 import * as React from "react";
-import { getOverrideProps } from "./utils";
+import { getOverrideProps, useAuthSignOutAction } from "./utils";
 import { Text, View } from "@aws-amplify/ui-react";
 export default function NavBar(props) {
   const { overrides, ...rest } = props;
+  const logoutOnClick = useAuthSignOutAction({ global: false });
   return (
     <View
       width="1114px"
@@ -73,6 +74,9 @@ export default function NavBar(props) {
         padding="0px 0px 0px 0px"
         whiteSpace="pre-wrap"
         children="Log out"
+        onClick={() => {
+          logoutOnClick();
+        }}
         {...getOverrideProps(overrides, "Log out")}
       ></Text>
       <View

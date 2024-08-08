@@ -19,11 +19,11 @@ export declare type Variant = {
 export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
 export declare type NoteUIOverridesProps = {
     NoteUI?: PrimitiveOverrideProps<ViewProps>;
+    "Rectangle 5"?: PrimitiveOverrideProps<ViewProps>;
+    Vector3856136?: PrimitiveOverrideProps<IconProps>;
     "T-Shirt"?: PrimitiveOverrideProps<TextProps>;
     text?: PrimitiveOverrideProps<TextProps>;
-    MyIcon3856135?: PrimitiveOverrideProps<ViewProps>;
-    Vector3856136?: PrimitiveOverrideProps<IconProps>;
-    MyIcon3856137?: PrimitiveOverrideProps<ViewProps>;
+    MyIcon?: PrimitiveOverrideProps<ViewProps>;
     Vector3856138?: PrimitiveOverrideProps<IconProps>;
 } & EscapeHatchProps;
 export declare type NoteUIProps = React.PropsWithChildren<Partial<ViewProps> & {

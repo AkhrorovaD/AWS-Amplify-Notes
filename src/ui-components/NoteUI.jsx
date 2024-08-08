@@ -13,7 +13,7 @@ import { Icon, Text, View } from "@aws-amplify/ui-react";
 const client = generateClient();
 export default function NoteUI(props) {
   const { note, myIcon3856135, overrides, ...rest } = props;
-  const myIconThreeEightFiveSixOneThreeFiveOnClick = async () => {
+  const vectorThreeEightFiveSixOneThreeSixOnClick = async () => {
     await client.graphql({
       query: deleteNote.replaceAll("__typename", ""),
       variables: {
@@ -38,6 +38,45 @@ export default function NoteUI(props) {
       {...getOverrideProps(overrides, "NoteUI")}
       {...rest}
     >
+      <View
+        width="31px"
+        height="30px"
+        display="block"
+        gap="unset"
+        alignItems="unset"
+        justifyContent="unset"
+        position="absolute"
+        top="12px"
+        left="261px"
+        padding="0px 0px 0px 0px"
+        backgroundColor="rgba(255,250,250,1)"
+        {...getOverrideProps(overrides, "Rectangle 5")}
+      ></View>
+      <Icon
+        width="18.08px"
+        height="19.5px"
+        viewBox={{ minX: 0, minY: 0, width: 18.083332061767578, height: 19.5 }}
+        paths={[
+          {
+            d: "M14.2083 6.5L14.2083 17.3333L3.875 17.3333L3.875 6.5L14.2083 6.5ZM12.2708 0L5.8125 0L4.52083 1.08333L0 1.08333L0 3.25L18.0833 3.25L18.0833 1.08333L13.5625 1.08333L12.2708 0ZM16.7917 4.33333L1.29167 4.33333L1.29167 17.3333C1.29167 18.525 2.45417 19.5 3.875 19.5L14.2083 19.5C15.6292 19.5 16.7917 18.525 16.7917 17.3333L16.7917 4.33333Z",
+            fill: "rgba(92,102,112,1)",
+            fillRule: "nonzero",
+          },
+        ]}
+        display="block"
+        gap="unset"
+        alignItems="unset"
+        justifyContent="unset"
+        position="absolute"
+        top="4.49%"
+        bottom="89.78%"
+        left="89.45%"
+        right="4.5%"
+        onClick={() => {
+          vectorThreeEightFiveSixOneThreeSixOnClick();
+        }}
+        {...getOverrideProps(overrides, "Vector3856136")}
+      ></Icon>
       <Text
         fontFamily="Inter"
         fontSize="18px"
@@ -83,52 +122,6 @@ export default function NoteUI(props) {
         {...getOverrideProps(overrides, "text")}
       ></Text>
       <View
-        width="31px"
-        height="26px"
-        display="block"
-        gap="unset"
-        alignItems="unset"
-        justifyContent="unset"
-        overflow="hidden"
-        position="absolute"
-        top="12px"
-        left="267px"
-        padding="0px 0px 0px 0px"
-        backgroundColor="rgba(255,255,255,1)"
-        onClick={() => {
-          myIconThreeEightFiveSixOneThreeFiveOnClick();
-        }}
-        {...getOverrideProps(overrides, "MyIcon3856135")}
-      >
-        <Icon
-          width="18.08px"
-          height="19.5px"
-          viewBox={{
-            minX: 0,
-            minY: 0,
-            width: 18.083332061767578,
-            height: 19.5,
-          }}
-          paths={[
-            {
-              d: "M14.2083 6.5L14.2083 17.3333L3.875 17.3333L3.875 6.5L14.2083 6.5ZM12.2708 0L5.8125 0L4.52083 1.08333L0 1.08333L0 3.25L18.0833 3.25L18.0833 1.08333L13.5625 1.08333L12.2708 0ZM16.7917 4.33333L1.29167 4.33333L1.29167 17.3333C1.29167 18.525 2.45417 19.5 3.875 19.5L14.2083 19.5C15.6292 19.5 16.7917 18.525 16.7917 17.3333L16.7917 4.33333Z",
-              fill: "rgba(92,102,112,1)",
-              fillRule: "nonzero",
-            },
-          ]}
-          display="block"
-          gap="unset"
-          alignItems="unset"
-          justifyContent="unset"
-          position="absolute"
-          top="12.5%"
-          bottom="12.5%"
-          left="20.83%"
-          right="20.83%"
-          {...getOverrideProps(overrides, "Vector3856136")}
-        ></Icon>
-      </View>
-      <View
         width="20px"
         height="21px"
         display="block"
@@ -138,9 +131,9 @@ export default function NoteUI(props) {
         overflow="hidden"
         position="absolute"
         top="15px"
-        left="240px"
+        left="234px"
         padding="0px 0px 0px 0px"
-        {...getOverrideProps(overrides, "MyIcon3856137")}
+        {...getOverrideProps(overrides, "MyIcon")}
       >
         <Icon
           width="15px"
